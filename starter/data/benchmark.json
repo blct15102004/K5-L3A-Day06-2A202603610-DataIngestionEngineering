@@ -1,0 +1,202 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "What are the two main cost factors of model retraining in Modyn?",
+    "expected_answer": "The cost of model retraining is proportional to (i) how often the model trains and (ii) the number of data samples it trains on.",
+    "gold_source_id": "modyn_bother2025_p4",
+    "gold_page": 4,
+    "evidence_quote": "the cost is proportional to (i) how often the model trains and (ii) the number of data samples it trains on",
+    "filter": null
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "What is the full title and venue of the Modyn paper?",
+    "expected_answer": "Modyn: Data-Centric Machine Learning Pipeline Orchestration, published as an ACM SIGMOD paper.",
+    "gold_source_id": "modyn_bother2025_p1",
+    "gold_page": 1,
+    "evidence_quote": "Modyn: Data-Centric Machine Learning Pipeline Orchestration",
+    "filter": null
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "Which universities and institutions are the authors of the Modyn paper affiliated with?",
+    "expected_answer": "ETH Zurich (Switzerland), IT University of Copenhagen (Denmark), and Technical University of Munich (Germany).",
+    "gold_source_id": "modyn_bother2025_p1",
+    "gold_page": 1,
+    "evidence_quote": "ETH Zurich, Switzerland\nTIES ROBROEK, IT University of Copenhagen, Denmark\nVIKTOR GSTEIGER, ETH Zurich, Switzerland\nROBIN HOLZINGER, Technical University of Munich, Germany",
+    "filter": {"section": "introduction"}
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "What triggering policy types does Modyn support according to the experiments on yearbook?",
+    "expected_answer": "Modyn supports time-based, amount-based, drift-based, and performance-based triggering policies.",
+    "gold_source_id": "modyn_bother2025_p20",
+    "gold_page": 20,
+    "evidence_quote": "Time\nDrift\nAmount\nPerformance",
+    "filter": null
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "What databases does Modyn use as a backend for the presampling selection policy?",
+    "expected_answer": "Modyn uses a Postgres backend that persists samples to a Postgres table, using SQLAlchemy for querying.",
+    "gold_source_id": "modyn_bother2025_p12",
+    "gold_page": 12,
+    "evidence_quote": "The first backend is the Postgres backend, which persists the samples to a Postgres table. We use SQLAlchemy to allow for easy querying of data.",
+    "filter": {"section": "system_design"}
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "What libraries does Modyn use for calculating data drift similarity metrics and hypothesis testing?",
+    "expected_answer": "Modyn leverages the evidently and alibi-detect libraries for calculating similarity metrics and hypothesis testing.",
+    "gold_source_id": "modyn_bother2025_p10",
+    "gold_page": 10,
+    "evidence_quote": "We leverage the evidently and alibi-detect libraries for calculating similarity metrics and hypothesis testing.",
+    "filter": null
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "What is the OnlineDataset abstraction in Modyn responsible for?",
+    "expected_answer": "The OnlineDataset abstraction loads keys from the selector, payloads from storage, parses the bytes, and returns tensors into the training loop.",
+    "gold_source_id": "modyn_bother2025_p13",
+    "gold_page": 13,
+    "evidence_quote": "the OnlineDataset abstraction that loads keys from the selector, payloads from storage, parses the bytes, and returns tensors into the training loop",
+    "filter": null
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question": "What ML framework does the Modyn trainer server currently implement?",
+    "expected_answer": "The Modyn trainer server currently implements a PyTorch-based trainer, though its design is agnostic to the ML framework.",
+    "gold_source_id": "modyn_bother2025_p15",
+    "gold_page": 15,
+    "evidence_quote": "Modyn currently implements a PyTorch-based trainer, but its design is agnostic to the ML framework.",
+    "filter": {"section": "system_design"}
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question": "What is the mean accuracy of the best performing data selection strategy on the 50% subset benchmark shown in Figure 1?",
+    "expected_answer": "The best strategy (Full data training baseline) achieves around 91% mean accuracy, while among the 50% subset strategies, the top approaches reach approximately 88-91%.",
+    "gold_source_id": "modyn_bother2025_p2",
+    "gold_page": 2,
+    "evidence_quote": "Mean accuracies of 9 selection strategies (50 % subset) and full data training",
+    "filter": null
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "What is the field of continual learning (CL) focused on according to the paper?",
+    "expected_answer": "Continual learning focuses on adapting ML models to ongoing data streams by learning new tasks, defined as groups of classes.",
+    "gold_source_id": "modyn_bother2025_p4",
+    "gold_page": 4,
+    "evidence_quote": "The field of continual learning (CL), or incremental learning, adapts ML models to ongoing data streams by focusing on learning new tasks, defined as groups of classes.",
+    "filter": null
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "How does Modyn handle data drift detection for unstructured data such as images?",
+    "expected_answer": "For unstructured data like images, Modyn transforms it into a latent embedding space (optionally projected to lower dimensionality using PCA), builds a sliding window of current and reference data, and measures similarity metrics such as MMD.",
+    "gold_source_id": "modyn_bother2025_p10",
+    "gold_page": 10,
+    "evidence_quote": "For unstructured data such as images, we transform it into a latent embedding space, and optionally project it to lower dimensionality, e.g., using PCA. Modyn uses the most recent model of the pipeline to generate embeddings.",
+    "filter": null
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "What selection policy window options are available in Modyn?",
+    "expected_answer": "The window can be infinite (retrain on all past data), include only data since the last trigger (finetune on new data), or include all data up to n previous triggers.",
+    "gold_source_id": "modyn_bother2025_p11",
+    "gold_page": 11,
+    "evidence_quote": "This window can be infinite (\"retrain\" on all past data), just include the data since the last trigger (\"finetune\" on new data), or include all data up to n previous triggers.",
+    "filter": {"section": "system_design"}
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "How does prefetching work in the OnlineDataset worker architecture?",
+    "expected_answer": "Each worker has a partition buffer of configurable size and spawns a configurable number of prefetching threads that issue gRPC requests to fetch keys from the selector and payloads from storage in parallel.",
+    "gold_source_id": "modyn_bother2025_p14",
+    "gold_page": 14,
+    "evidence_quote": "each worker (or dataset instance) implements a prefetching mechanism. Each worker has a partition buffer of a configurable size. Upon creation, a worker spawns a configurable number of prefetching threads that issue gRPC requests.",
+    "filter": null
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question": "For the CGLM dataset throughput benchmark, what happens to Modyn's throughput when using 4 or more data workers?",
+    "expected_answer": "For CGLM, Modyn's throughput stagnates at around 475 samples/s when using 4 or more data workers, basically reaching the optimal local throughput.",
+    "gold_source_id": "modyn_bother2025_p24",
+    "gold_page": 24,
+    "evidence_quote": "As soon as 4 workers are used, the throughput stagnates at around 475 samples/s. Modyn basically reaches the optimal local throughput for all configurations.",
+    "filter": null
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "What performance-based trigger threshold performed best on the yearbook dataset?",
+    "expected_answer": "Generally, higher thresholds result in more frequent triggers and improved performance, but the 80% threshold performed better than 85%.",
+    "gold_source_id": "modyn_bother2025_p20",
+    "gold_page": 20,
+    "evidence_quote": "Generally, higher thresholds result in more frequent triggers and improved performance. Interestingly, the 80 % threshold performs better than 85 %.",
+    "filter": null
+  },
+  {
+    "id": "q16",
+    "split": "test",
+    "question": "What triggering policy function does Modyn formally model, and what does it output?",
+    "expected_answer": "Modyn models the triggering policy as a function π: P(S) → union of power sets of [1,...,n]. Given a batch St, it outputs a sequence of samples that trigger a new training process.",
+    "gold_source_id": "modyn_bother2025_p5",
+    "gold_page": 5,
+    "evidence_quote": "We model a triggering policy as a function π: P(S) → union P([1,...,n]). Given a batch St, it determines which samples trigger a new training process.",
+    "filter": {"section": "system_design"}
+  },
+  {
+    "id": "q17",
+    "split": "test",
+    "question": "What is the BinaryFileWrapper in Modyn optimized for?",
+    "expected_answer": "BinaryFileWrapper has an optimized bytes-to-int parsing function based on endianness and operates on std::ifstreams to avoid loading the entire file into memory.",
+    "gold_source_id": "modyn_bother2025_p15",
+    "gold_page": 15,
+    "evidence_quote": "BinaryFileWrapper has an optimized bytes-to-int parsing function based on the endianness the file was written with, and operates on std::ifstreams to not load the entire file into memory.",
+    "filter": {"section": "system_design"}
+  },
+  {
+    "id": "q18",
+    "split": "test",
+    "question": "What was the best selection strategy result on CGLM-landmark for the 25% subset?",
+    "expected_answer": "For 25% subsets on CGLM-landmark, DLIS performs best at 33.7%, followed by RS2 at 33.6%.",
+    "gold_source_id": "modyn_bother2025_p19",
+    "gold_page": 19,
+    "evidence_quote": "for 25 % subsets, DLIS performs best (33.7 %), followed by RS2 (33.6 %)",
+    "filter": null
+  },
+  {
+    "id": "q19",
+    "split": "test",
+    "question": "What models does Modyn ship with out of the box?",
+    "expected_answer": "Modyn comes with some models such as ResNets and DLRM.",
+    "gold_source_id": "modyn_bother2025_p15",
+    "gold_page": 15,
+    "evidence_quote": "Modyn comes with some models (e.g., ResNets, DLRM",
+    "filter": {"section": "system_design"}
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "question": "What throughput does Modyn achieve for the Criteo recommendation system dataset relative to optimal?",
+    "expected_answer": "Modyn reaches over 70% of optimal throughput for the challenging recommendation system case (Criteo).",
+    "gold_source_id": "modyn_bother2025_p24",
+    "gold_page": 24,
+    "evidence_quote": "Modyn reaches over 70 % of optimal throughput for the challenging recommendation system case.",
+    "filter": null
+  }
+]

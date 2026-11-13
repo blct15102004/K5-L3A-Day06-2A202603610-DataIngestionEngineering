@@ -1,0 +1,159 @@
+{
+  "description": "Manual coherence evaluation (0=cut mid-thought, 1=acceptable but minor context missing, 2=self-contained)",
+  "sampled_pages": [
+    1,
+    3,
+    5,
+    8,
+    10,
+    12,
+    14,
+    17,
+    20,
+    24
+  ],
+  "strategy_a_avg": 1.2,
+  "strategy_b_avg": 2.0,
+  "detail": {
+    "1": {
+      "a": {
+        "chunk_id": "modyn_bother2025_p1_fix_000",
+        "text_preview": "Modyn: Data-Centric Machine Learning Pipeline Orchestration MAXIMILIAN BÖTHER, ETH Zurich...",
+        "score": 2,
+        "reason": "Title, authors and abstract opening. Self-contained introduction to Modyn."
+      },
+      "b": {
+        "chunk_id": "modyn_bother2025_p1_par_000",
+        "text_preview": "Modyn: Data-Centric Machine Learning Pipeline Orchestration MAXIMILIAN BÖTHER, ETH Zurich...",
+        "score": 2,
+        "reason": "Complete title and metadata block, completely self-contained."
+      }
+    },
+    "3": {
+      "a": {
+        "chunk_id": "modyn_bother2025_p3_fix_000",
+        "text_preview": "transparently by a platform, while ML users focus on defining the logic of ML training... We present Modyn...",
+        "score": 1,
+        "reason": "Fixed-window cuts into the middle of a sentence at the top of page 3."
+      },
+      "b": {
+        "chunk_id": "modyn_bother2025_p3_par_000",
+        "text_preview": "We present Modyn, a data-centric machine learning pipeline orchestrator that addresses this gap...",
+        "score": 2,
+        "reason": "Paragraph boundary begins neatly at the introduction of Modyn's contributions."
+      }
+    },
+    "5": {
+      "a": {
+        "chunk_id": "modyn_bother2025_p5_fix_000",
+        "text_preview": "is given as St = (s1,...,snt). Each sample si in St comprises a unique identifier, a label, a timestamp...",
+        "score": 1,
+        "reason": "Cuts mid-equation from previous page, but definition of sample si is readable."
+      },
+      "b": {
+        "chunk_id": "modyn_bother2025_p5_par_001",
+        "text_preview": "Triggering. The triggering policy decides whether to trigger a new training. We model a triggering policy as a function pi...",
+        "score": 2,
+        "reason": "Complete paragraph introducing Triggering policy definition formally."
+      }
+    },
+    "8": {
+      "a": {
+        "chunk_id": "modyn_bother2025_p8_fix_000",
+        "text_preview": "Fig. 3. Modyn's system design. stores data samples streaming in from external sources in its storage...",
+        "score": 1,
+        "reason": "Contains figure caption and part of architecture description, cuts mid-sentence."
+      },
+      "b": {
+        "chunk_id": "modyn_bother2025_p8_par_001",
+        "text_preview": "Example pipeline. Figure 4 shows a declaratively-specified Modyn pipeline. At minimum, a description comprises...",
+        "score": 2,
+        "reason": "Self-contained paragraph explaining the 7 declarative components of a pipeline."
+      }
+    },
+    "10": {
+      "a": {
+        "chunk_id": "modyn_bother2025_p10_fix_000",
+        "text_preview": "covariate shift, i.e., they compare the distribution of the incoming data to some reference data. We leverage the evidently...",
+        "score": 1,
+        "reason": "Starts mid-sentence from page 9 continuation, explains drift libraries."
+      },
+      "b": {
+        "chunk_id": "modyn_bother2025_p10_par_001",
+        "text_preview": "Data drift variants. For unstructured data such as images, we transform it into a latent embedding space...",
+        "score": 2,
+        "reason": "Well-defined paragraph covering how drift detection applies to unstructured image data."
+      }
+    },
+    "12": {
+      "a": {
+        "chunk_id": "modyn_bother2025_p12_fix_000",
+        "text_preview": "Backends for presampling. For implementing presampling strategies, Modyn provides two backends that share an interface...",
+        "score": 2,
+        "reason": "Starts at section header and cleanly introduces Postgres and local backends."
+      },
+      "b": {
+        "chunk_id": "modyn_bother2025_p12_par_000",
+        "text_preview": "Backends for presampling. For implementing presampling strategies, Modyn provides two backends...",
+        "score": 2,
+        "reason": "Clean paragraph explaining presampling backends in full."
+      }
+    },
+    "14": {
+      "a": {
+        "chunk_id": "modyn_bother2025_p14_fix_000",
+        "text_preview": "In order to avoid data stalls when the data loader requests data, each worker (or dataset instance) implements a prefetching...",
+        "score": 1,
+        "reason": "Explains prefetching but cuts off before discussing partition buffer mechanics."
+      },
+      "b": {
+        "chunk_id": "modyn_bother2025_p14_par_000",
+        "text_preview": "In order to avoid data stalls when the data loader requests data, each worker (or dataset instance) implements a prefetching mechanism...",
+        "score": 2,
+        "reason": "Full paragraph discussing prefetching mechanism, partition buffers, and gRPC streaming."
+      }
+    },
+    "17": {
+      "a": {
+        "chunk_id": "modyn_bother2025_p17_fix_000",
+        "text_preview": "Evaluation Year Model trained on data up to Accuracy % Fig. 7. Accuracy matrix for yearbook full data training...",
+        "score": 1,
+        "reason": "Mixes OCR figure labels with beginning of text discussion on underfitting."
+      },
+      "b": {
+        "chunk_id": "modyn_bother2025_p17_par_001",
+        "text_preview": "50 % subset training. Figure 8 shows composite model accuracies per selection strategy in a boxplot. Generally, the uncertainty based downsamplers...",
+        "score": 2,
+        "reason": "Complete discussion comparing uncertainty downsamplers on 50% subset."
+      }
+    },
+    "20": {
+      "a": {
+        "chunk_id": "modyn_bother2025_p20_fix_000",
+        "text_preview": "Number of triggers Mean Accuracy % Time Drift Amount Performance Fig. 12. Feasible set of triggering policies...",
+        "score": 1,
+        "reason": "Contains raw plot text fragments before starting the discussion on performance triggers."
+      },
+      "b": {
+        "chunk_id": "modyn_bother2025_p20_par_001",
+        "text_preview": "Performance-based triggers. These triggers fire when the model performance on a window drops below a threshold...",
+        "score": 2,
+        "reason": "Clear, complete paragraph explaining performance-based triggering mechanics."
+      }
+    },
+    "24": {
+      "a": {
+        "chunk_id": "modyn_bother2025_p24_fix_000",
+        "text_preview": "Throughput Modyn Optimal (a) Criteo (x1000) Data Workers Throughput (b) CGLM Fig. 16. Modyn throughput vs. optimal...",
+        "score": 1,
+        "reason": "Fragmented chart labels followed by partial conclusion."
+      },
+      "b": {
+        "chunk_id": "modyn_bother2025_p24_par_002",
+        "text_preview": "8 CONCLUSION AND FUTURE WORK. We present the data-centric Modyn orchestrator for ML pipelines on growing datasets...",
+        "score": 2,
+        "reason": "Self-contained conclusion summary and future work outlook."
+      }
+    }
+  }
+}

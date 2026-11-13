@@ -1,0 +1,177 @@
+{
+  "summary": {
+    "strategy_a": {
+      "avg_score": 0.87,
+      "count_0": 6,
+      "count_1": 5,
+      "count_2": 4,
+      "total_hits": 15
+    },
+    "strategy_b": {
+      "avg_score": 1.0,
+      "count_0": 5,
+      "count_1": 5,
+      "count_2": 5,
+      "total_hits": 15
+    },
+    "strategy_c": {
+      "avg_score": 1.33,
+      "count_0": 3,
+      "count_1": 4,
+      "count_2": 8,
+      "total_hits": 15
+    }
+  },
+  "per_question": {
+    "q16": {
+      "question": "What triggering policy function does Modyn formally model, and what does it output?",
+      "strategy_a": {
+        "scores": [
+          2,
+          1,
+          0
+        ],
+        "avg": 1.0,
+        "note": "Hit 1 contains the exact mathematical definition on page 5."
+      },
+      "strategy_b": {
+        "scores": [
+          2,
+          1,
+          0
+        ],
+        "avg": 1.0,
+        "note": "Hit 1 has the full triggering policy formula paragraph."
+      },
+      "strategy_c": {
+        "scores": [
+          2,
+          2,
+          1
+        ],
+        "avg": 1.67,
+        "note": "Filter section=system_design narrows results to formalization pages."
+      }
+    },
+    "q17": {
+      "question": "What is the BinaryFileWrapper in Modyn optimized for?",
+      "strategy_a": {
+        "scores": [
+          2,
+          1,
+          0
+        ],
+        "avg": 1.0,
+        "note": "Hit 1 contains the endianness and ifstream optimization text on page 15."
+      },
+      "strategy_b": {
+        "scores": [
+          2,
+          1,
+          0
+        ],
+        "avg": 1.0,
+        "note": "Hit 1 contains the exact paragraph discussing BinaryFileWrapper."
+      },
+      "strategy_c": {
+        "scores": [
+          2,
+          2,
+          0
+        ],
+        "avg": 1.33,
+        "note": "Filter keeps top hits within system_design section."
+      }
+    },
+    "q18": {
+      "question": "What was the best selection strategy result on CGLM-landmark for the 25% subset?",
+      "strategy_a": {
+        "scores": [
+          2,
+          1,
+          0
+        ],
+        "avg": 1.0,
+        "note": "Hit 1 on page 19 contains the 25% subset DLIS (33.7%) and RS2 (33.6%) numbers."
+      },
+      "strategy_b": {
+        "scores": [
+          2,
+          1,
+          0
+        ],
+        "avg": 1.0,
+        "note": "Hit 1 paragraph has the exact takeaway statistics."
+      },
+      "strategy_c": {
+        "scores": [
+          2,
+          1,
+          0
+        ],
+        "avg": 1.0,
+        "note": "No filter on q18; behaves identical to B."
+      }
+    },
+    "q19": {
+      "question": "What models does Modyn ship with out of the box?",
+      "strategy_a": {
+        "scores": [
+          1,
+          1,
+          0
+        ],
+        "avg": 0.67,
+        "note": "Hits mention ResNets and DLRM, but split across chunks."
+      },
+      "strategy_b": {
+        "scores": [
+          2,
+          1,
+          0
+        ],
+        "avg": 1.0,
+        "note": "Hit 1 has Trainer Server paragraph mentioning ResNets, DLRM, transformers."
+      },
+      "strategy_c": {
+        "scores": [
+          2,
+          2,
+          1
+        ],
+        "avg": 1.67,
+        "note": "Section filter isolates the Trainer Server component description."
+      }
+    },
+    "q20": {
+      "question": "What throughput does Modyn achieve for the Criteo recommendation system dataset relative to optimal?",
+      "strategy_a": {
+        "scores": [
+          2,
+          0,
+          0
+        ],
+        "avg": 0.67,
+        "note": "Hit 1 has the over 70% optimal throughput sentence on page 24."
+      },
+      "strategy_b": {
+        "scores": [
+          2,
+          1,
+          0
+        ],
+        "avg": 1.0,
+        "note": "Hit 1 contains the complete conclusion of Criteo throughput benchmark."
+      },
+      "strategy_c": {
+        "scores": [
+          2,
+          1,
+          0
+        ],
+        "avg": 1.0,
+        "note": "No filter on q20; behaves identical to B."
+      }
+    }
+  }
+}

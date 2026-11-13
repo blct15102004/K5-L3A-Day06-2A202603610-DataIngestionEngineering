@@ -1,0 +1,62 @@
+{
+  "document_id": "modyn_bother2025",
+  "title": "Modyn: Data-Centric Machine Learning Pipeline Orchestration",
+  "filename": "bother2025modyn.pdf",
+  "source": "bother2025modyn.pdf",
+  "authors": [
+    "Maximilian Böther (ETH Zurich)",
+    "Ties Robroek (IT University of Copenhagen)",
+    "Viktor Gsteiger (ETH Zurich)",
+    "Robin Holzinger (Technical University of Munich)",
+    "Xianzhe Ma (ETH Zurich)",
+    "Pinar Tözün (IT University of Copenhagen)",
+    "Ana Klimovic (ETH Zurich)"
+  ],
+  "year": 2025,
+  "venue": "ACM SIGMOD",
+  "license": "ACM Open Access / Research Paper - For educational and research use",
+  "url": "https://doi.org/10.1145/3698822",
+  "total_pages": 30,
+  "content_pages": 30,
+  "total_chars": 116139,
+  "language": "English",
+  "topic": "Data-centric ML pipeline orchestration, continuous training, data selection",
+  "scan_only": false,
+  "extraction_method": "pypdf text extraction",
+  "sections": {
+    "1": "Introduction",
+    "2": "Background and Motivation",
+    "3": "Related Work",
+    "4": "System Overview",
+    "5": "System Design",
+    "6": "Datasets",
+    "7": "Evaluation",
+    "8": "Conclusion",
+    "references": "References (pages 25-30)"
+  },
+  "section_page_map": {
+    "introduction": [2, 3, 4],
+    "background": [4],
+    "related_work": [3, 4],
+    "system_design": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+    "datasets": [16, 17],
+    "evaluation": [17, 18, 19, 20, 21, 22, 23, 24],
+    "conclusion": [24, 25],
+    "references": [25, 26, 27, 28, 29, 30]
+  },
+  "metadata_fields": {
+    "document_id": "Fixed: modyn_bother2025",
+    "source": "Fixed: bother2025modyn.pdf",
+    "page": "1-indexed page number",
+    "section": "Inferred from page number and content keywords",
+    "topic": "Fixed: ml_pipeline",
+    "component": "Inferred: triggering/selection/storage/training/evaluation/references"
+  },
+  "notes": [
+    "Pages 25-30 are references only — low information density for retrieval",
+    "Pages 1 is title/abstract",
+    "Mathematical notation (formulas) may not extract cleanly from PDF",
+    "Figure captions extracted as text"
+  ],
+  "created_at": "2026-11-13"
+}

@@ -1,4 +1,10 @@
-strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+strategy,split,hit_at_1,hit_at_3,chunk_count,model,dimensions,cost_usd,timestamp
+strategy_a,dev,5/15,9/15,265,models/gemini-embedding-001,768,0.0,2026-11-13 19:27:41
+strategy_a,test,1/5,3/5,265,models/gemini-embedding-001,768,0.0,2026-11-13 19:27:41
+strategy_a,overall,6/20,12/20,265,models/gemini-embedding-001,768,0.0,2026-11-13 19:27:41
+strategy_b,dev,8/15,10/15,283,models/gemini-embedding-001,768,0.0,2026-11-13 19:27:41
+strategy_b,test,1/5,3/5,283,models/gemini-embedding-001,768,0.0,2026-11-13 19:27:41
+strategy_b,overall,9/20,13/20,283,models/gemini-embedding-001,768,0.0,2026-11-13 19:27:41
+strategy_c,dev,8/15,10/15,283,models/gemini-embedding-001,768,0.0,2026-11-13 19:27:41
+strategy_c,test,1/5,3/5,283,models/gemini-embedding-001,768,0.0,2026-11-13 19:27:41
+strategy_c,overall,9/20,13/20,283,models/gemini-embedding-001,768,0.0,2026-11-13 19:27:41

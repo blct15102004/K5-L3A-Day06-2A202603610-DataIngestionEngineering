@@ -1,0 +1,152 @@
+{
+  "strategy_a": {
+    "total_hits": 15,
+    "complete_hits": 15,
+    "complete_pct": 100.0,
+    "filter_questions": 3,
+    "filter_compliant": 3,
+    "per_question": [
+      {
+        "question_id": "q16",
+        "filter": {
+          "section": "system_design"
+        },
+        "hits_checked": 3,
+        "complete_count": 3,
+        "filter_compliant": true
+      },
+      {
+        "question_id": "q17",
+        "filter": {
+          "section": "system_design"
+        },
+        "hits_checked": 3,
+        "complete_count": 3,
+        "filter_compliant": true
+      },
+      {
+        "question_id": "q18",
+        "filter": null,
+        "hits_checked": 3,
+        "complete_count": 3,
+        "filter_compliant": null
+      },
+      {
+        "question_id": "q19",
+        "filter": {
+          "section": "system_design"
+        },
+        "hits_checked": 3,
+        "complete_count": 3,
+        "filter_compliant": true
+      },
+      {
+        "question_id": "q20",
+        "filter": null,
+        "hits_checked": 3,
+        "complete_count": 3,
+        "filter_compliant": null
+      }
+    ]
+  },
+  "strategy_b": {
+    "total_hits": 15,
+    "complete_hits": 15,
+    "complete_pct": 100.0,
+    "filter_questions": 3,
+    "filter_compliant": 3,
+    "per_question": [
+      {
+        "question_id": "q16",
+        "filter": {
+          "section": "system_design"
+        },
+        "hits_checked": 3,
+        "complete_count": 3,
+        "filter_compliant": true
+      },
+      {
+        "question_id": "q17",
+        "filter": {
+          "section": "system_design"
+        },
+        "hits_checked": 3,
+        "complete_count": 3,
+        "filter_compliant": true
+      },
+      {
+        "question_id": "q18",
+        "filter": null,
+        "hits_checked": 3,
+        "complete_count": 3,
+        "filter_compliant": null
+      },
+      {
+        "question_id": "q19",
+        "filter": {
+          "section": "system_design"
+        },
+        "hits_checked": 3,
+        "complete_count": 3,
+        "filter_compliant": true
+      },
+      {
+        "question_id": "q20",
+        "filter": null,
+        "hits_checked": 3,
+        "complete_count": 3,
+        "filter_compliant": null
+      }
+    ]
+  },
+  "strategy_c": {
+    "total_hits": 15,
+    "complete_hits": 15,
+    "complete_pct": 100.0,
+    "filter_questions": 3,
+    "filter_compliant": 3,
+    "per_question": [
+      {
+        "question_id": "q16",
+        "filter": {
+          "section": "system_design"
+        },
+        "hits_checked": 3,
+        "complete_count": 3,
+        "filter_compliant": true
+      },
+      {
+        "question_id": "q17",
+        "filter": {
+          "section": "system_design"
+        },
+        "hits_checked": 3,
+        "complete_count": 3,
+        "filter_compliant": true
+      },
+      {
+        "question_id": "q18",
+        "filter": null,
+        "hits_checked": 3,
+        "complete_count": 3,
+        "filter_compliant": null
+      },
+      {
+        "question_id": "q19",
+        "filter": {
+          "section": "system_design"
+        },
+        "hits_checked": 3,
+        "complete_count": 3,
+        "filter_compliant": true
+      },
+      {
+        "question_id": "q20",
+        "filter": null,
+        "hits_checked": 3,
+        "complete_count": 3,
+        "filter_compliant": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "strategy_a": {
+    "dev": {
+      "total_queries": 15,
+      "hit_at_1_count": 5,
+      "hit_at_1_ratio": "5/15",
+      "hit_at_1_pct": 33.33,
+      "hit_at_3_count": 9,
+      "hit_at_3_ratio": "9/15",
+      "hit_at_3_pct": 60.0,
+      "filter_queries": 4,
+      "filter_compliant_ratio": "3/4",
+      "filter_compliant_pct": 75.0
+    },
+    "test": {
+      "total_queries": 5,
+      "hit_at_1_count": 1,
+      "hit_at_1_ratio": "1/5",
+      "hit_at_1_pct": 20.0,
+      "hit_at_3_count": 3,
+      "hit_at_3_ratio": "3/5",
+      "hit_at_3_pct": 60.0,
+      "filter_queries": 3,
+      "filter_compliant_ratio": "3/3",
+      "filter_compliant_pct": 100.0
+    },
+    "overall": {
+      "total_queries": 20,
+      "hit_at_1_count": 6,
+      "hit_at_1_ratio": "6/20",
+      "hit_at_1_pct": 30.0,
+      "hit_at_3_count": 12,
+      "hit_at_3_ratio": "12/20",
+      "hit_at_3_pct": 60.0,
+      "filter_queries": 7,
+      "filter_compliant_ratio": "6/7",
+      "filter_compliant_pct": 85.71
+    }
+  },
+  "strategy_b": {
+    "dev": {
+      "total_queries": 15,
+      "hit_at_1_count": 8,
+      "hit_at_1_ratio": "8/15",
+      "hit_at_1_pct": 53.33,
+      "hit_at_3_count": 10,
+      "hit_at_3_ratio": "10/15",
+      "hit_at_3_pct": 66.67,
+      "filter_queries": 4,
+      "filter_compliant_ratio": "3/4",
+      "filter_compliant_pct": 75.0
+    },
+    "test": {
+      "total_queries": 5,
+      "hit_at_1_count": 1,
+      "hit_at_1_ratio": "1/5",
+      "hit_at_1_pct": 20.0,
+      "hit_at_3_count": 3,
+      "hit_at_3_ratio": "3/5",
+      "hit_at_3_pct": 60.0,
+      "filter_queries": 3,
+      "filter_compliant_ratio": "3/3",
+      "filter_compliant_pct": 100.0
+    },
+    "overall": {
+      "total_queries": 20,
+      "hit_at_1_count": 9,
+      "hit_at_1_ratio": "9/20",
+      "hit_at_1_pct": 45.0,
+      "hit_at_3_count": 13,
+      "hit_at_3_ratio": "13/20",
+      "hit_at_3_pct": 65.0,
+      "filter_queries": 7,
+      "filter_compliant_ratio": "6/7",
+      "filter_compliant_pct": 85.71
+    }
+  },
+  "strategy_c": {
+    "dev": {
+      "total_queries": 15,
+      "hit_at_1_count": 8,
+      "hit_at_1_ratio": "8/15",
+      "hit_at_1_pct": 53.33,
+      "hit_at_3_count": 10,
+      "hit_at_3_ratio": "10/15",
+      "hit_at_3_pct": 66.67,
+      "filter_queries": 4,
+      "filter_compliant_ratio": "4/4",
+      "filter_compliant_pct": 100.0
+    },
+    "test": {
+      "total_queries": 5,
+      "hit_at_1_count": 1,
+      "hit_at_1_ratio": "1/5",
+      "hit_at_1_pct": 20.0,
+      "hit_at_3_count": 3,
+      "hit_at_3_ratio": "3/5",
+      "hit_at_3_pct": 60.0,
+      "filter_queries": 3,
+      "filter_compliant_ratio": "3/3",
+      "filter_compliant_pct": 100.0
+    },
+    "overall": {
+      "total_queries": 20,
+      "hit_at_1_count": 9,
+      "hit_at_1_ratio": "9/20",
+      "hit_at_1_pct": 45.0,
+      "hit_at_3_count": 13,
+      "hit_at_3_ratio": "13/20",
+      "hit_at_3_pct": 65.0,
+      "filter_queries": 7,
+      "filter_compliant_ratio": "7/7",
+      "filter_compliant_pct": 100.0
+    }
+  }
+}
